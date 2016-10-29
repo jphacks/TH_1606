@@ -9,13 +9,15 @@ body {
   font-size: 54px;
   margin: 50px 0 30px;
   text-align: center;
-  color: white;
+  color: #fff;
+  text-shadow: 0px 2px 5px black;
 }
 
 #wrapper {
   margin: 0 auto 50px;
   max-width: 1200px;
-  box-shadow: 0px 5px 20px black;
+  box-shadow: 0px 2px 15px black;
+  background-color: #fff;
 }
 
 #board,
@@ -26,7 +28,7 @@ body {
 
 #board {
   width: 60%;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 #chat {
@@ -35,13 +37,12 @@ body {
 }
 
 #videos {
-  background-color: #F3F3F3;
-  margin-top: 1px;
+  background-color: #fff;
 }
 
 #videos video {
   width: 200px;
-  padding: 10px;
-  padding-right: 0;
+  margin: 10px;
   box-sizing: border-box;
+  box-shadow: 0px 2px 5px black;
 }
