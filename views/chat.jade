@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  #videos
+    div
+      button#video-mute(data-muted='false') video mute
+      button#audio-mute(data-muted='false') audio mute
+
+  script(type='text/javascript', src='/javascripts/chat.js')
