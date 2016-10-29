@@ -1,5 +1,20 @@
 var APIKey = '7a5d2622-4b5f-47d3-b2eb-45fcf2f7681d';
 
+function startTimer(duration, display) {
+  var timer = duration, minutes, seconds;
+  setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    display.text(minutes + ":" + seconds);
+    if (--timer < 0) {
+      timer = duration;
+      muteVideo($('#videos video')[0]);
+    }
+  }, 1000);
+}
+
 var multiparty = new MultiParty({
   "key": APIKey,
   "reliable": true,
@@ -36,6 +51,7 @@ $('document').ready(function() {
       var videoNode = createVideoNode(video, 'my-video');
       videoNode.volume = 0;
       $(videoNode).appendTo("#videos");
+      startTimer(5, $('#time'));
     })
     .on('peer_ms', function(video) {
       var videoNode = createVideoNode(video, 'peer-video');

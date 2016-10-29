@@ -23,12 +23,19 @@ body {
 #board,
 #chat {
   display: inline-block;
-  height: 500px;
+  min-height: 500px;
+  vertical-align: top;
 }
 
 #board {
   width: 60%;
   background-color: #f7f7f7;
+}
+
+#time {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
 }
 
 #chat {
