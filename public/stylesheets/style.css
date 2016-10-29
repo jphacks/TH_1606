@@ -1,8 +1,47 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #F76666;
+  color: #222222;
 }
 
-a {
-  color: #00B7FF;
+.title {
+  font-family: 'Bree Serif', serif;
+  font-size: 54px;
+  margin: 50px 0 30px;
+  text-align: center;
+  color: white;
+}
+
+#wrapper {
+  margin: 0 auto 50px;
+  max-width: 1200px;
+  box-shadow: 0px 5px 20px black;
+}
+
+#board,
+#chat {
+  display: inline-block;
+  height: 500px;
+}
+
+#board {
+  width: 60%;
+  background-color: #F7F7F7;
+}
+
+#chat {
+  width: 40%;
+  background-color: #efefef;
+}
+
+#videos {
+  background-color: #F3F3F3;
+  margin-top: 1px;
+}
+
+#videos video {
+  width: 200px;
+  padding: 10px;
+  padding-right: 0;
+  box-sizing: border-box;
 }
