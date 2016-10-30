@@ -53,3 +53,17 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 2px 5px black;
 }
+
+#videos video {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px black;
+  background-color: grey;
+  display: inline-block;
+}
+
+#videos video.active {
+  border: 2px solid green;
+}
