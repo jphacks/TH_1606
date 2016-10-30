@@ -34,16 +34,17 @@ Add whiteboard on which one can leave notes, message each other, doodle and inse
 
 Using WebRTC for regulated discussion.
 
-## Adopted Technologies, APIs, Frameworks
+### Adopted Technologies, APIs, Frameworks
 
 - Express (JS framework)
 - SkyWay WebRTC (Multiparty library, TURN server)
 - Heroku server
 - SSL certificate
 
-#### Devices
+#### Requirements
 
 - General purpose computer
+- Allow to use your microphone and camera
 
 ### Original Technologies
 
@@ -51,10 +52,4 @@ Networking
 
 #### Original Technologies/Functions developed during the contest
 
-- Please write the details of anything that your team developed here.
-
-We have implemented a videochat function with sound and video, improved the discussion flow by displaying a timer and managing speakers rounds.
-
-- Add file links or `commit_id`s of segments that your team particularly focused on.
-
-https://github.com/jphacks/TH_1606/commit/fe7c3888c9dfd7697942d398644f768b6bc985fd
+We have implemented a videochat function with sound and video, improved the discussion flow by displaying a timer and managing speakers rounds. One of the key functionalities: https://github.com/jphacks/TH_1606/commit/fe7c3888c9dfd7697942d398644f768b6bc985fd
