@@ -1,39 +1,60 @@
-# サンプル（プロダクト名）
-## 製品概要
-### X Tech（X → 今回皆さんが選定した好きな言葉に書き換えてください）
+#Agree
 
-### 背景（製品開発のきっかけ、課題等）
-### 製品説明（具体的な製品の説明）
-### 特長
-####1. 特長1
-####2. 特長2
-####3. 特長3
+## Make group decisions. Faster. Easier. Better. Agree is a web application where you can invite participants, take equal turns making suggestions via RTC, and vote on your favorites. A timer makes sure that the decision is being made and everybody has an equal opportunity to share their idea.
 
-### 解決出来ること
-### 今後の展望
-### 注力したこと（こだわり等）
-* 
-* 
+### TalkTech
 
-## 開発技術
-### 活用した外部技術
-#### API・データ
-* 
-* 
+Let's say you want to go out with your friends for dinner, to karaoke, or to the movies. But the decision on where to go, what to do or buy, is taking forever (right?). Valueable time is being lost and the moods are sinking. Often one or two people are leading a discussion, and quiet group members may not get the chance to voice their opinion, or have it taken seriously. Sometimes it seems like there is only 1 person making a decision that should be up to everyone.
 
-#### フレームワーク・ライブラリ・モジュール
-* 
-* 
+We have found a solution to these problems. Agree is our hack for this situation.
 
-#### デバイス
-* 
-* 
+We use SkyWay WebRTC technology to connect with others. All of the members are invited and all have limited but equal amounts of time to present their ideas without being interrupted. This can be anywhere from 20 seconds onward. While they would make suggestions, the other members would have an option to vote anonymously or non-anonymously on someones proposal.
 
-### 独自技術
-#### 期間中に開発した独自機能・技術
-* 独自で開発したものの内容をこちらに記載してください
-* 特に力を入れた部分をファイルリンク、またはcommit_idを記載してください（任意）
+The web app could be also used for other purposes, like for example when brainstorming with a study group, as it is in our intention to extend the app for more varied purposes.
 
-#### 研究内容（任意）
-* もし、製品に研究内容を用いた場合は、研究内容の詳細及び具体的な活用法について、こちらに記載をしてください。
-* 
+In cases where the app is used for voting, when all members have proposed and voted, AGREE will turn out the result. This allows people to honestly voice their option and opinion without being afraid of judgement from the others, and acknowledges all opinions equally. It takes the responsibility for the decision from a single person, and at the same time makes sure that a decision is made.
+
+### Core features:
+
+####1. Multiuser real time communication
+
+####2. Limited and equally distributed presentation time
+
+####3. Discussion rounds
+
+### What problem does your service solve?
+
+Quick group decision making and brainstorming.
+
+### Future prospects for the product
+
+Add whiteboard on which one can leave notes, message each other, doodle and insert multimedia. Support mobile devices.
+
+### What was the focus?
+
+Using WebRTC for regulated discussion.
+
+## Adopted Technologies, APIs, Frameworks
+
+- Express (JS framework)
+- SkyWay WebRTC (Multiparty library, TURN server)
+- Heroku server
+- SSL certificate
+
+#### Devices
+
+- General purpose computer
+
+### Original Technologies
+
+Networking
+
+#### Original Technologies/Functions developed during the contest
+
+- Please write the details of anything that your team developed here.
+
+We have implemented a videochat function with sound and video, improved the discussion flow by displaying a timer and managing speakers rounds.
+
+- Add file links or `commit_id`s of segments that your team particularly focused on.
+
+https://github.com/jphacks/TH_1606/commit/fe7c3888c9dfd7697942d398644f768b6bc985fd
