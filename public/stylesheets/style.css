@@ -53,6 +53,7 @@ body {
 
 #videos {
   background-color: #fff;
+  margin: 10 15px;
 }
 
 #videos video {
@@ -78,5 +79,38 @@ body {
   left: 48px;
   width: 600px;
   height: 450px;
-  transition: .3s all;
+  animation: nextSpeaker .6s;
+  -moz-animation: nextSpeaker .6s;
+  -webkit-animation: nextSpeaker .6s;
 }
+
+@keyframes nextSpeaker {
+  from {
+    top: 50px;
+    opacity: .5;
+  }
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+}
+@-moz-keyframes nextSpeaker {
+  from {
+    top: 50px;
+    opacity: .5;
+  }
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes nextSpeaker {
+  from {
+    top: 50px;
+    opacity: .5;
+  }
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+}​
