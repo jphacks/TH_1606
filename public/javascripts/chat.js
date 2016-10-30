@@ -8,7 +8,7 @@ var multiparty = new MultiParty({
 
 var currentSpeakerIndex = 0;
 var activeClass = "active";
-var speakerTimeInSeconds = 15;
+var speakerTimeInSeconds = 10;
 
 function createVideoNode(video, customClass) {
   var videoNode = MultiParty.util.createVideoNode(video);
