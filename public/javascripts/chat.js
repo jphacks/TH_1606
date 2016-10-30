@@ -8,6 +8,7 @@ var multiparty = new MultiParty({
 
 var currentSpeakerIndex = 0;
 var activeClass = "active";
+var speakerTimeInSeconds = 5;
 
 function createVideoNode(video, customClass) {
   var videoNode = MultiParty.util.createVideoNode(video);
@@ -61,7 +62,7 @@ function startDiscussion() {
   getVideos()
     .eq(currentSpeakerIndex)
     .addClass(activeClass);
-  startTimer(2, $('#time'));
+  startTimer(speakerTimeInSeconds, $('#time'));
 }
 
 function nextSpeaker() {
@@ -108,7 +109,5 @@ $('document').ready(function() {
     muteAudio(muteBtn);
   });
 
-  $("#start").on("click", function(event) {
-    start();
-  });
+  start();
 });
