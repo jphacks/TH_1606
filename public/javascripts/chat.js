@@ -8,7 +8,7 @@ var multiparty = new MultiParty({
 
 var currentSpeakerIndex = 0;
 var activeClass = "active";
-var speakerTimeInSeconds = 2;
+var speakerTimeInSeconds = 7;
 
 function createVideoNode(video, customClass) {
   var videoNode = MultiParty.util.createVideoNode(video);
@@ -44,7 +44,15 @@ function startTimer(duration, display) {
     display.text(minutes + ":" + seconds);
     if (--timer < 0) {
       timer = duration;
+      $("#nextSpeaker").removeClass("visible");
       nextSpeaker();
+      $("#time").css("opacity", 0.7);
+    }
+    if (timer <= 2) {
+      $("#nextSpeaker").addClass("visible");
+      $("#time").css("color", "red");
+    } else {
+      $("#time").css("color", "black");
     }
   }, 1000);
 }
