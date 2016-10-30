@@ -12,8 +12,9 @@ block content
       p#time
 
     #videos
-      //- div
-      //-   button#video-mute(data-muted='false') video mute
-      //-   button#audio-mute(data-muted='false') audio mute
+
+  div.options
+    button#video-mute(data-muted='false') mute video
+    button#audio-mute(data-muted='false') mute audio
 
   script(type='text/javascript', src='/javascripts/chat.js')

@@ -22,7 +22,7 @@ function muteMedia(mediaType, muteBtn) {
   options[mediaType] = isMuted;
   multiparty.mute(options);
   $(muteBtn)
-    .text(mediaType + " " + (isMuted ? "unmute" : "mute"))
+    .text((isMuted ? "unmute" : "mute") + " " + mediaType)
     .data("muted", isMuted);
 }
 
